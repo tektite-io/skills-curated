@@ -25,7 +25,8 @@ The marketplaces below have been reviewed and are approved for use. Install plug
 
 | Marketplace | Focus |
 |-------------|-------|
-| [trailofbits/skills](https://github.com/trailofbits/skills) | Trail of Bits security research and audit skills |
+| [trailofbits/skills](https://github.com/trailofbits/skills) | Trail of Bits original skills for security research and auditing |
+| [trailofbits/skills-curated](https://github.com/trailofbits/skills-curated) | Community skills curated and distributed by Trail of Bits |
 | [trailofbits/skills-internal](https://github.com/trailofbits/skills-internal) | Trail of Bits internal skills (private) |
 | [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) | Anthropic's official plugins |
 | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | Anthropic's official knowledge work plugins |
