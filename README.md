@@ -45,16 +45,6 @@ cd /path/to/parent  # e.g., if repo is at ~/projects/skills-curated, be in ~/pro
 |--------|-------------|
 | [skill-extractor](plugins/skill-extractor/) | Extract reusable skills from work sessions |
 
-## Trophy Case
-
-Bugs discovered using curated skills. Found something? [Let us know!](https://github.com/trailofbits/skills-curated/issues/new?template=trophy-case.yml)
-
-When reporting bugs you've found, feel free to mention:
-> Found using [Curated Skills](https://github.com/trailofbits/skills-curated)
-
-| Skill | Bug |
-|-------|-----|
-
 ## Other Marketplaces We Like
 
 | Marketplace | Focus |
