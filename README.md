@@ -1,35 +1,45 @@
 # Curated Skills Marketplace
 
-A curated, community-vetted Claude Code plugin marketplace. Every skill here has been reviewed for quality and safety before inclusion.
+Trail of Bits' reviewed and approved Claude Code plugins. Every skill and marketplace here has been vetted for quality and safety.
 
-## Why Curated?
+## Why This Exists
 
-The Claude Code skills ecosystem is growing fast, but not everything out there is trustworthy. Some published skills have been found to contain backdoors or malicious hooks. This repo exists as a **gate**—a place where the community can submit skills they use and trust, with review and CI checks enforcing quality and safety standards.
+We don't want people at Trail of Bits installing random plugins from GitHub repos we haven't reviewed. Published skills have been found with backdoors and malicious hooks, and the ecosystem has no built-in quality gate. This repo is how we solve that problem internally.
 
-If you're using a skill from the wild, consider submitting it here so others can benefit from reviewed, vetted versions.
+Everything here has been code-reviewed by Trail of Bits staff. We're sharing it publicly so the broader community benefits from the same vetting.
 
 ## Installation
 
-### Add the Marketplace
-
 ```
 /plugin marketplace add trailofbits/skills-curated
-```
-
-### Browse and Install Plugins
-
-```
 /plugin menu
 ```
 
-### Local Development
+## How It Works
 
-To add the marketplace locally (e.g., for testing or development), navigate to the **parent directory** of this repository:
+There are three ways to get a skill approved for use:
 
-```
-cd /path/to/parent  # e.g., if repo is at ~/projects/skills-curated, be in ~/projects
-/plugins marketplace add ./skills-curated
-```
+### 1. Use an approved marketplace
+
+The marketplaces below have been reviewed and are approved for use. Install plugins from them directly.
+
+| Marketplace | Focus |
+|-------------|-------|
+| [trailofbits/skills](https://github.com/trailofbits/skills) | Trail of Bits security research and audit skills |
+| [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | Anthropic's official knowledge work plugins |
+| [obra/superpowers](https://github.com/obra/superpowers) | Advanced workflow patterns, TDD enforcement, multi-skill orchestration |
+| [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin) | Production engineering workflows and multi-agent review |
+| [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | Marketing-focused skills |
+
+### 2. Request approval of a new marketplace
+
+Found a marketplace not on the list? [Open an issue](https://github.com/trailofbits/skills-curated/issues/new) requesting approval. Include the repo URL and what you're using it for. We'll review it and add it to the approved list if it passes.
+
+### 3. Submit an individual skill
+
+Using a skill from an unapproved source? Open a PR to add it here. See [CLAUDE.md](CLAUDE.md) for authoring guidelines. Every PR gets code review — we read every line of hooks and scripts.
+
+Once merged, the skill is available to all Trail of Bits employees and anyone else using this marketplace.
 
 ## Available Plugins
 
@@ -44,26 +54,6 @@ cd /path/to/parent  # e.g., if repo is at ~/projects/skills-curated, be in ~/pro
 | Plugin | Description |
 |--------|-------------|
 | [skill-extractor](plugins/skill-extractor/) | Extract reusable skills from work sessions |
-
-## Other Marketplaces We Like
-
-| Marketplace | Focus |
-|-------------|-------|
-| [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) | Anthropic's official plugins |
-| [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | Anthropic's official knowledge work plugins |
-| [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Browser automation for AI agents |
-| [obra/superpowers](https://github.com/obra/superpowers) | Advanced workflow patterns, TDD enforcement, multi-skill orchestration |
-| [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin) | Production engineering workflows and multi-agent review |
-| [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | Marketing-focused skills |
-
-## Contributing
-
-We welcome contributions! Please see [CLAUDE.md](CLAUDE.md) for skill authoring guidelines.
-
-Every submission goes through code review. We check for:
-- Malicious hooks, scripts, or commands
-- Quality and completeness (frontmatter, required sections, examples)
-- Genuine value-add over Claude's built-in capabilities
 
 ## License
 
