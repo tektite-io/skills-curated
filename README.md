@@ -33,11 +33,18 @@ cd /path/to/parent  # e.g., if repo is at ~/projects/skills-curated, be in ~/pro
 
 ## Available Plugins
 
+### Writing
+
+| Plugin | Description |
+|--------|-------------|
+| [humanizer](plugins/humanizer/) | Identifies and removes AI writing patterns to make text sound natural |
+
 ### Development
 
 | Plugin | Description |
 |--------|-------------|
 | [ask-questions-if-underspecified](plugins/ask-questions-if-underspecified/) | Clarify requirements before implementing |
+| [skill-extractor](plugins/skill-extractor/) | Extract reusable skills from work sessions |
 
 ## Trophy Case
 

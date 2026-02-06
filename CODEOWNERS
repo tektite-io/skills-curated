@@ -3,3 +3,5 @@
 
 # Plugin-specific owners (alphabetical)
 /plugins/ask-questions-if-underspecified/ @kevin-valerio @dguido
+/plugins/humanizer/ @dguido
+/plugins/skill-extractor/ @dguido
