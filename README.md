@@ -26,6 +26,7 @@ The marketplaces below have been reviewed and are approved for use. Install plug
 | Marketplace | Focus |
 |-------------|-------|
 | [trailofbits/skills](https://github.com/trailofbits/skills) | Trail of Bits security research and audit skills |
+| [trailofbits/skills-internal](https://github.com/trailofbits/skills-internal) | Trail of Bits internal skills (private) |
 | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | Anthropic's official knowledge work plugins |
 | [obra/superpowers](https://github.com/obra/superpowers) | Advanced workflow patterns, TDD enforcement, multi-skill orchestration |
 | [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin) | Production engineering workflows and multi-agent review |
@@ -38,6 +39,8 @@ Found a marketplace not on the list? [Open an issue](https://github.com/trailofb
 ### 3. Submit an individual skill
 
 Using a skill from an unapproved source? Open a PR to add it here. See [CLAUDE.md](CLAUDE.md) for authoring guidelines. Every PR gets code review — we read every line of hooks and scripts.
+
+When submitting an external skill, include attribution in the plugin's README: where it came from (link to the original repo or author) and any modifications you made. See the [humanizer README](plugins/humanizer/README.md) for an example.
 
 Once merged, the skill is available to all Trail of Bits employees and anyone else using this marketplace.
 
