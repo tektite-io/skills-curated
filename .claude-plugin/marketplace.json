@@ -10,17 +10,6 @@
   },
   "plugins": [
     {
-      "name": "ask-questions-if-underspecified",
-      "version": "1.0.1",
-      "description": "Clarify requirements before implementing. When doubting, ask questions.",
-      "author": {
-        "name": "Kevin Valerio",
-        "email": "opensource@trailofbits.com",
-        "url": "https://github.com/trailofbits"
-      },
-      "source": "./plugins/ask-questions-if-underspecified"
-    },
-    {
       "name": "humanizer",
       "version": "1.0.0",
       "description": "Identifies and removes AI writing patterns to make text sound natural and human-written",

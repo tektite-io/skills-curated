@@ -12,8 +12,8 @@
 
 | Complexity | Skill | What It Demonstrates |
 |------------|-------|---------------------|
-| **Basic** | [ask-questions-if-underspecified](plugins/ask-questions-if-underspecified/) | Minimal frontmatter, simple guidance |
-| **Intermediate** | [constant-time-analysis](https://github.com/trailofbits/skills/tree/main/plugins/constant-time-analysis) | Python package, references/, language-specific docs |
+| **Basic** | [humanizer](plugins/humanizer/) | Frontmatter, references/, before/after examples |
+| **Intermediate** | [skill-extractor](plugins/skill-extractor/) | Multiple references/, quality gates, command interface |
 | **Advanced** | [culture-index](https://github.com/trailofbits/skills/tree/main/plugins/culture-index) | Scripts, workflows/, templates/, PDF extraction, multiple entry points |
 
 **When in doubt, copy one of these and adapt it.**

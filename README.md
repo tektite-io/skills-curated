@@ -43,7 +43,6 @@ cd /path/to/parent  # e.g., if repo is at ~/projects/skills-curated, be in ~/pro
 
 | Plugin | Description |
 |--------|-------------|
-| [ask-questions-if-underspecified](plugins/ask-questions-if-underspecified/) | Clarify requirements before implementing |
 | [skill-extractor](plugins/skill-extractor/) | Extract reusable skills from work sessions |
 
 ## Trophy Case
