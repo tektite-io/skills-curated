@@ -1,0 +1,87 @@
+name: Lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ruff:
+    name: Python (ruff)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
+        with:
+          persist-credentials: false
+      - uses: astral-sh/ruff-action@57714a7c8a2e59f32539362ba31877a1957dded1  # v3.5.1
+        with:
+          args: check --output-format=github
+      - uses: astral-sh/ruff-action@57714a7c8a2e59f32539362ba31877a1957dded1  # v3.5.1
+        with:
+          args: format --check
+
+  shellcheck:
+    name: Shell (shellcheck)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
+        with:
+          persist-credentials: false
+      - name: Run shellcheck
+        run: |
+          shfiles=$(find plugins -name "*.sh" -type f 2>/dev/null)
+          if [ -n "$shfiles" ]; then
+            echo "$shfiles" | xargs shellcheck -x
+          else
+            echo "No shell scripts found, skipping"
+          fi
+
+  shfmt:
+    name: Shell (shfmt)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
+        with:
+          persist-credentials: false
+      - name: Install shfmt
+        run: |
+          curl -sS https://webinstall.dev/shfmt | bash
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+      - name: Run shfmt
+        run: |
+          shfiles=$(find plugins -name "*.sh" -type f 2>/dev/null)
+          if [ -n "$shfiles" ]; then
+            echo "$shfiles" | xargs shfmt -i 2 -ci -d
+          else
+            echo "No shell scripts found, skipping"
+          fi
+
+  bats:
+    name: Shell (bats)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
+        with:
+          persist-credentials: false
+      - name: Install bats and uv
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y bats
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+      - name: Run hook tests
+        run: |
+          batfiles=$(find plugins -name "*.bats" -type f 2>/dev/null)
+          if [ -n "$batfiles" ]; then
+            echo "$batfiles" | xargs bats
+          else
+            echo "No bats test files found, skipping"
+          fi

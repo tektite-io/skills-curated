@@ -1,0 +1,24 @@
+{
+  "name": "skills-curated",
+  "owner": {
+    "name": "Trail of Bits",
+    "email": "opensource@trailofbits.com"
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Curated, community-vetted Claude Code plugins reviewed for quality and safety"
+  },
+  "plugins": [
+    {
+      "name": "ask-questions-if-underspecified",
+      "version": "1.0.1",
+      "description": "Clarify requirements before implementing. When doubting, ask questions.",
+      "author": {
+        "name": "Kevin Valerio",
+        "email": "opensource@trailofbits.com",
+        "url": "https://github.com/trailofbits"
+      },
+      "source": "./plugins/ask-questions-if-underspecified"
+    }
+  ]
+}
