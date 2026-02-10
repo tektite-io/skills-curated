@@ -33,6 +33,7 @@ The marketplaces below have been reviewed and are approved for use. Install plug
 | [obra/superpowers](https://github.com/obra/superpowers) | Advanced workflow patterns, TDD enforcement, multi-skill orchestration |
 | [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin) | Production engineering workflows and multi-agent review |
 | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | Marketing-focused skills |
+| [openai/skills](https://github.com/openai/skills) | OpenAI's official skills catalog for Codex |
 
 ### 2. Request approval of a new marketplace
 
