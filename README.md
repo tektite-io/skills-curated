@@ -55,6 +55,12 @@ Once merged, the skill is available to all Trail of Bits employees and anyone el
 |--------|-------------|
 | [humanizer](plugins/humanizer/) | Identifies and removes AI writing patterns to make text sound natural |
 
+### Security
+
+| Plugin | Description |
+|--------|-------------|
+| [ffuf-web-fuzzing](plugins/ffuf-web-fuzzing/) | Expert guidance for ffuf web fuzzing during authorized penetration testing |
+
 ### Development
 
 | Plugin | Description |
