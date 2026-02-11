@@ -60,6 +60,7 @@ Once merged, the skill is available to all Trail of Bits employees and anyone el
 | Plugin | Description |
 |--------|-------------|
 | [skill-extractor](plugins/skill-extractor/) | Extract reusable skills from work sessions |
+| [planning-with-files](plugins/planning-with-files/) | File-based planning with persistent markdown for complex multi-step tasks |
 
 ## License
 
