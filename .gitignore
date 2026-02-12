@@ -28,6 +28,7 @@ build/
 
 # Local plugin cache
 .claude/
+!.claude/commands/
 
 # MCP server config (contains API keys)
 .mcp.json
