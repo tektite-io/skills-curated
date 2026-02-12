@@ -222,7 +222,7 @@
       "source": "./plugins/openai-yeet"
     },
     {
-      "name": "trailofbits",
+      "name": "trailofbits-skill-importer",
       "version": "1.0.0",
       "description": "Import skills from GitHub into the curated marketplace. Downloads, transforms to plugin standards, validates, and creates a PR.",
       "author": {
@@ -230,7 +230,7 @@
         "email": "opensource@trailofbits.com",
         "url": "https://github.com/trailofbits"
       },
-      "source": "./plugins/trailofbits"
+      "source": "./plugins/trailofbits-skill-importer"
     }
   ]
 }
